@@ -1,0 +1,81 @@
+.board_cell>img {
+    width : 70px;
+    height: 70px;
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.board_all   {
+    margin: 20px auto;
+    width: 480px;
+    height: 480px;
+    background: #FFF;
+    border: 10px solid #336;
+    border-collapse: collapse; /* */
+}
+div.board_row {
+    width: 480px;
+    border: solid #FFF;
+    border-width: 0px 0px 0px 0px;
+    display: flex;
+}
+
+div.board_cell {
+    width: 70px; height: 70px;
+    border: 5px solid #FFF; /* */
+}
+
+div.final_candidate_row {
+    margin: 20px auto;
+    width: 270px;
+    border: 5px solid #AAA;
+    border-collapse: collapse;
+    display: flex;
+}
+
+div.final_candidate_cell {
+  width: 80px; height: 80px;
+  border: 5px solid #CCC;
+}
+
+div.gift_name_board {
+  text-align: center;
+  font-family: mapleFont;
+  font-size: 25px;
+  display: none;
+  border: 5px solid #CCC;
+  width: 270px;
+  margin: auto;
+}
+
+img.final_candidate_back {
+    width : 70px;
+    height: 70px;
+    display:none;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.final_candidate_front {
+    width : 80px;
+    height: 80px;
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: mapleFont;
+}
+#guild_master {
+  width: 100px;
+  height: auto;
+}
+
+@font-face {
+  font-family: mapleFont;
+  src: url("./fonts/Maplestory Light.ttf");
+}

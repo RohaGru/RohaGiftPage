@@ -1,0 +1,260 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./gift_table.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1><img id="guild_master" src="./images/guild_master.png" />어거스트 로얄 로하 상품권</h1>
+    <div class="board_all">
+      <div class="board_row">
+          <div class="board_cell" id="cell_1"><img class="back" src='./images/back/001.png'/></div>
+          <div class="board_cell" id="cell_2"><img class="back" src='./images/back/002.png'/></div>
+          <div class="board_cell" id="cell_3"><img class="back" src='./images/back/003.png'/></div>
+          <div class="board_cell" id="cell_4"><img class="back" src='./images/back/004.png'/></div>
+          <div class="board_cell" id="cell_5"><img class="back" src='./images/back/005.png'/></div>
+          <div class="board_cell" id="cell_6"><img class="back" src='./images/back/006.png'/></div>
+      </div>
+      <div class="board_row">
+          <div class="board_cell" id="cell_7"><img class="back" src='./images/back/007.png'/></div>
+          <div class="board_cell" id="cell_8"><img class="back" src='./images/back/008.png'/></div>
+          <div class="board_cell" id="cell_9"><img class="back" src='./images/back/009.png'/></div>
+          <div class="board_cell" id="cell_10"><img class="back" src='./images/back/010.png'/></div>
+          <div class="board_cell" id="cell_11"><img class="back" src='./images/back/011.png'/></div>
+          <div class="board_cell" id="cell_12"><img class="back" src='./images/back/012.png'/></div>
+      </div>
+      <div class="board_row">
+          <div class="board_cell" id="cell_13"><img class="back" src='./images/back/013.png'/></div>
+          <div class="board_cell" id="cell_14"><img class="back" src='./images/back/014.png'/></div>
+          <div class="board_cell" id="cell_15"><img class="back" src='./images/back/015.png'/></div>
+          <div class="board_cell" id="cell_16"><img class="back" src='./images/back/016.png'/></div>
+          <div class="board_cell" id="cell_17"><img class="back" src='./images/back/017.png'/></div>
+          <div class="board_cell" id="cell_18"><img class="back" src='./images/back/018.png'/></div>
+      </div>
+      <div class="board_row">
+          <div class="board_cell" id="cell_19"><img class="back" src='./images/back/019.png'/></div>
+          <div class="board_cell" id="cell_20"><img class="back" src='./images/back/020.png'/></div>
+          <div class="board_cell" id="cell_21"><img class="back" src='./images/back/021.png'/></div>
+          <div class="board_cell" id="cell_22"><img class="back" src='./images/back/022.png'/></div>
+          <div class="board_cell" id="cell_23"><img class="back" src='./images/back/023.png'/></div>
+          <div class="board_cell" id="cell_24"><img class="back" src='./images/back/024.png'/></div>
+      </div>
+      <div class="board_row">
+          <div class="board_cell" id="cell_25"><img class="back" src='./images/back/025.png'/></div>
+          <div class="board_cell" id="cell_26"><img class="back" src='./images/back/026.png'/></div>
+          <div class="board_cell" id="cell_27"><img class="back" src='./images/back/027.png'/></div>
+          <div class="board_cell" id="cell_28"><img class="back" src='./images/back/028.png'/></div>
+          <div class="board_cell" id="cell_29"><img class="back" src='./images/back/029.png'/></div>
+          <div class="board_cell" id="cell_30"><img class="back" src='./images/back/030.png'/></div>
+      </div>
+      <div class="board_row">
+          <div class="board_cell" id="cell_31"><img class="back" src='./images/back/031.png'/></div>
+          <div class="board_cell" id="cell_32"><img class="back" src='./images/back/032.png'/></div>
+          <div class="board_cell" id="cell_33"><img class="back" src='./images/back/033.png'/></div>
+          <div class="board_cell" id="cell_34"><img class="back" src='./images/back/034.png'/></div>
+          <div class="board_cell" id="cell_35"><img class="back" src='./images/back/035.png'/></div>
+          <div class="board_cell" id="cell_36"><img class="back" src='./images/back/036.png'/></div>
+      </div>
+    </div>
+
+    <div class="final_candidate_row">
+      <div class="final_candidate_cell" id="final_1"><img class="final_candidate_back" src='./images/back/final_back.png'/></div>
+      <div class="final_candidate_cell" id="final_2"><img class="final_candidate_back" src='./images/back/final_back.png'/></div>
+      <div class="final_candidate_cell" id="final_3"><img class="final_candidate_back" src='./images/back/final_back.png'/></div>
+    </div>
+
+    <div class="gift_name_board"></div>
+    <script>
+
+
+
+    </script>
+
+    <script type="text/javascript">
+      function pad(number, total_length) {
+        var str = '' + number;
+        while (str.length < total_length) {
+          str = '0' + str;
+        }
+        return str;
+      };
+
+      password = prompt("16자리 코드를 입력해주세요.")
+      if(password == "1111"){
+
+        var gift_name_list = [ //그림에 맞게 순서 재배치 완료 -- giftlist.txt랑 그림이랑 순서가 다르다!
+          "거울세계 코어젬스톤 1개",
+          "경험 축적의 비약 3개",
+          "금빛 각인의 인장 5개",
+          "로얄스타일 1개",
+          "시즌 로얄 헤어 쿠폰 1개",
+          "마스터리 북 세트 3개 씩",
+          "5천만 메소",
+          "블랙큐브 1세트",
+          "1만 메이플 포인트",
+          "3만 메이플 포인트",
+          "5천 메이플 포인트",
+          "스페셜 라벨 쿠폰 1개",
+          "시즌 로얄 성형 쿠폰 1개",
+          "수상한 에디셔널 큐브 5개",
+          "수상한 큐브 100개",
+          "순백의 주문서 10% 5장",
+          "스킨 케어 쿠폰 1개",
+          "아케인리버 물방울석 3개",
+          "금빛 에디셔널 각인의 인장 5개",
+          "에디셔널 큐브 1세트",
+          "에픽 잠재능력 부여 주문서 50% 3개",
+          "이노센트 주문서 50% 3장",
+          "재물 획득의 비약 3개",
+          "1억 메소",
+          "3억 메소",
+          "주문의 흔적 9000개",
+          "치킨 기프티콘 1개",
+          "코어젬스톤 1개",
+          "코어젬스톤 3개",
+          "코어젬스톤 5개",
+          "코어젬스톤 10개",
+          "태초의 물방울석 3개",
+          "파워 엘릭서 500개",
+          "펫의 먹이 500개",
+          "피자 기프티콘 1개",
+          "햄버거 세트 기프티콘 1개"
+          ];
+
+        $(document).ready(function(){
+          var num_choice=0;
+          var final_candidate_list =[];
+          var is_end=true;
+          var board_show=[];
+          var board_get=[];
+          var board_num_list = [];
+          for(var i = 0; i < 36; i++) {
+              board_show[i] = -1;
+              board_get[i] = false;
+          }
+
+          $(".back").fadeIn(1000);
+          $(".final_candidate_back").fadeIn(1000);
+          $(".board_cell").click(function(){
+            var board_num = Number($(this).attr('id').split('_')[1]);               //1~36
+            var inner_img = $(this).find("img");
+            var is_available = board_get[board_num-1] == false;
+            final_candidate_id = "#final_" + (num_choice + 1).toString();           //final_1 ~ final_3
+            var final_img = $(final_candidate_id).find("img.final_candidate_back");
+            var final_name = $('.gift_name_board');
+            var gift_num;
+            var gift_img_path;
+            var gift_name;
+            var remove_img;
+
+            if(num_choice < 3 && is_available && is_end){
+              is_end = false;
+              inner_img.fadeOut(500);
+              final_img.fadeOut(500);
+              final_name.fadeOut(500);
+              setTimeout(function(){
+                board_num_list[num_choice] = board_num;
+                console.log(board_num_list)
+                if (board_show[board_num-1] == -1){
+                  gift_num = Math.floor(Math.random() * 36);
+                  board_show[board_num-1] = gift_num;
+                  gift_img_path = './images/gift/' + pad(gift_num+1,3) + '.png';
+                  gift_name = gift_name_list[gift_num];
+                  inner_img.attr('src',gift_img_path);
+                  inner_img.attr('class','front');
+                }
+                else{
+                  gift_img_path = './images/gift/' + pad(board_show[board_num-1]+1,3) + '.png';
+                  gift_name = gift_name_list[board_show[board_num-1]];
+                }
+                board_get[board_num-1] = true;
+                inner_img.fadeIn(500);
+                final_img.attr('src',gift_img_path);
+                final_img.attr('class','final_candidate_front');
+                if(board_show[board_num-1] == -1){
+                  final_candidate_list[num_choice]= gift_num;
+                }
+                else{
+                  final_candidate_list[num_choice] = board_show[board_num-1];
+                }
+                final_name.html(gift_name);
+                final_name.css('width', 25 * gift_name.length); //font size가 25이므로
+                final_img.fadeIn(500);
+                final_name.fadeIn(500);
+                setTimeout(function(){
+                  is_end = true;
+                  num_choice += 1;
+                  if(num_choice == 3){
+                    final_name.fadeOut(500);
+                    var final_gift_index = Math.floor(Math.random() * 3);
+                    setTimeout(function(){
+                      for(var i = 0; i < 3 ; i ++){
+                        if (i != final_gift_index) {
+                          remove_candidate_id = "#final_" + (i + 1).toString();
+                          remove_img = $(remove_candidate_id).find("img.final_candidate_front");
+                          remove_img.fadeOut(5000);
+                        }
+                      }
+                      setTimeout(function(){
+                        var final_num = final_candidate_list[final_gift_index];
+                        var final_gift_name = gift_name_list[final_num] + ' 당첨!!!';
+
+                        final_name.html(final_gift_name);
+                        final_name.css('width', 25 * (final_gift_name.length + 3));
+                        final_name.css('color', '#cc0066');
+                        final_name.fadeIn(2500);
+
+                        for(var i = 0; i < 3 ; i ++){
+                          if (board_num_list[i] != board_num_list[final_gift_index]) {
+                            board_get[board_num_list[i]-1] = false;
+                          }
+                        }
+                        var sold_out_gift_id = "#cell_" + (board_num_list[final_gift_index]).toString();
+                        var sold_out_gift_img = $(sold_out_gift_id).find('img');
+                        sold_out_gift_img.fadeOut(2000);
+
+                        setTimeout(function(){
+                          sold_out_gift_img.attr('src','./images/gift_checked/' +pad(board_show[board_num_list[final_gift_index]-1]+1,3) + '.png');
+                          sold_out_gift_img.fadeIn(2000);
+                        }, 2100);
+                        //reset num_choice for next user.
+                        setTimeout(function(){
+                          num_choice += 1
+                          sold_out_gift_img.fadeIn(1000);
+                        }, 2100);
+                      }, 2000);
+                    }, 700);
+
+                  };
+                }, 700);
+
+              }, 700);
+            };
+            if(num_choice == 4){
+              for(var i = 0; i < 3 ; i ++){
+                var return_id = "#final_" + (i + 1).toString();
+                return_elem = $(return_id).find("img.final_candidate_front");
+                return_elem.attr('src','./images/back/final_back.png')
+                return_elem.attr('class','final_candidate_back');
+                return_elem.fadeIn(1000);
+                final_name.fadeOut(1000);
+              }
+              setTimeout(function(){
+                num_choice = 0;
+                board_num_list = [];
+                final_candidate_list = [];
+                final_name.html("");
+                final_name.css('color', '#000000');
+              }, 1100);
+            }
+          });
+        });
+      }
+      else{
+        alert("코드를 다시 확인해 주세요.\n(새로고침 또는 F5를 눌러서 다시 시도해 주세요.)")
+        // 로그 남기기 실패한
+      }
+    </script>
+  </body>
+
+</html>
